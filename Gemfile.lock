@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    yard-state_machine (0.0.1)
+      ruby-graphviz (~> 1.0.0)
+      yard (~> 0.7.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ruby-graphviz (1.0.0)
+    yard (0.7.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  yard-state_machine!

@@ -1,0 +1,15 @@
+<h2>State Machines</h2>
+
+This class contains <%= @state_machines.count %> state machine<%= 's' if @state_machines.count > 1 %> managed by the state_machine gem.
+
+<% @state_machines.each do |state_machine_name, state_machine| %>
+  <h3><%= h state_machine_name %></h3>
+    <% if state_machine[:docstring] %>
+      <p><%= h state_machine[:docstring] %></p>
+    <% end %>
+    <% if @state_machine_image_objects[state_machine_name] %>
+
+      <img alt="state machine diagram for state machine <%= h state_machine_name %>" src="<%= url_for(@state_machine_image_objects[state_machine_name]) %>" />
+
+    <% end %>
+<% end %>
